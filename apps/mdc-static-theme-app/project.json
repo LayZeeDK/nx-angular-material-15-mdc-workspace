@@ -30,6 +30,16 @@
             "input": "apps/mdc-static-theme-app/src/styles/components/components-button.scss",
             "inject": false,
             "bundleName": "components-button"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-divider.scss",
+            "inject": false,
+            "bundleName": "components-divider"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-progress-bar.scss",
+            "inject": false,
+            "bundleName": "components-progress-bar"
           }
         ],
         "stylePreprocessorOptions": {

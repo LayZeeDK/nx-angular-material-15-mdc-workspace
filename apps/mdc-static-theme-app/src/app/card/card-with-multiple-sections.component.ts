@@ -10,8 +10,6 @@ import { MatCardModule } from '@angular/material/card';
     <link href="/components-card.css" rel="stylesheet" />
     <link href="/components-button.css" rel="stylesheet" />
 
-    <h3>Card with multiple sections</h3>
-
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
@@ -55,3 +53,5 @@ import { MatCardModule } from '@angular/material/card';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardWithMultipleSectionsComponent {}
+
+export default CardWithMultipleSectionsComponent;

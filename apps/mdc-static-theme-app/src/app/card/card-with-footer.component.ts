@@ -19,8 +19,6 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     <link href="/components-divider.css" rel="stylesheet" />
     <link href="/components-progress-bar.css" rel="stylesheet" />
 
-    <h3>Card with footer</h3>
-
     <mat-card class="example-card">
       <mat-card-header>
         <mat-card-subtitle>Dog Breed</mat-card-subtitle>
@@ -54,3 +52,5 @@ export class CardWithFooterComponent {
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
 }
+
+export default CardWithFooterComponent;

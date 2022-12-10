@@ -8,8 +8,6 @@ import { MatCardModule } from '@angular/material/card';
   template: `
     <link href="/components-card.css" rel="stylesheet" />
 
-    <h3>Card with media size</h3>
-
     <!-- Cards with media area -->
     <mat-card class="example-card">
       <mat-card-header>
@@ -89,3 +87,5 @@ export class CardWithMediaSizeComponent {
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
 }
+
+export default CardWithMediaSizeComponent;

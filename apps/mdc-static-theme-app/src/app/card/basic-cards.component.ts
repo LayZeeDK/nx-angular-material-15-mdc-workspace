@@ -8,8 +8,6 @@ import { MatCardModule } from '@angular/material/card';
   template: `
     <link href="/components-card.css" rel="stylesheet" />
 
-    <h3>Basic cards</h3>
-
     <mat-card>
       <mat-card-content>Simple card</mat-card-content>
     </mat-card>
@@ -24,3 +22,5 @@ import { MatCardModule } from '@angular/material/card';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BasicCardsComponent {}
+
+export default BasicCardsComponent;

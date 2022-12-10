@@ -8,6 +8,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'card',
-    loadComponent: () => import('./card/card.component'),
+    loadChildren: () => import('./card/card.routes'),
   },
 ];

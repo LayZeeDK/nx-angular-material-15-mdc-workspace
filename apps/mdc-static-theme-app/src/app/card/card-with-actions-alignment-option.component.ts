@@ -10,8 +10,6 @@ import { MatCardModule } from '@angular/material/card';
     <link href="/components-card.css" rel="stylesheet" />
     <link href="/components-button.css" rel="stylesheet" />
 
-    <h3>Card with actions alignment option</h3>
-
     <mat-card>
       <mat-card-header>
         <mat-card-title>Actions Buttons</mat-card-title>
@@ -44,3 +42,5 @@ import { MatCardModule } from '@angular/material/card';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardWithActionsAlignmentOptionComponent {}
+
+export default CardWithActionsAlignmentOptionComponent;

@@ -10,8 +10,6 @@ import { MatCardModule } from '@angular/material/card';
     <link href="/components-card.css" rel="stylesheet" />
     <link href="/components-button.css" rel="stylesheet" />
 
-    <h3>Card with sub-title</h3>
-
     <mat-card class="example-card">
       <mat-card-header>
         <mat-card-title>Shiba Inu</mat-card-title>
@@ -40,3 +38,5 @@ export class CardWithSubTitleComponent {
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
 }
+
+export default CardWithSubTitleComponent;

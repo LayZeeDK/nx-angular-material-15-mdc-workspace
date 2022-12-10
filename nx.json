@@ -38,16 +38,33 @@
   },
   "generators": {
     "@nrwl/angular:application": {
-      "style": "scss",
+      "e2eTestRunner": "none",
+      "inlineStyle": true,
+      "inlineTemplate": true,
       "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "prefix": "mdc",
+      "standalone": true,
+      "style": "scss",
+      "unitTestRunner": "none"
     },
     "@nrwl/angular:library": {
+      "changeDetection": "OnPush",
+      "displayBlock": true,
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "flat": true,
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "prefix": "mdc",
+      "standalone": true,
+      "unitTestRunner": "none"
     },
     "@nrwl/angular:component": {
+      "changeDetection": "OnPush",
+      "displayBlock": true,
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "flat": true,
+      "standalone": true,
       "style": "scss"
     }
   }

@@ -45,6 +45,7 @@
       "inlineStyle": true,
       "inlineTemplate": true,
       "prefix": "app",
+      "skipTests": true,
       "standalone": true
     },
     "@nrwl/angular:library": {
@@ -56,6 +57,7 @@
       "inlineTemplate": true,
       "flat": true,
       "prefix": "app",
+      "skipTests": true,
       "standalone": true
     },
     "@nrwl/angular:component": {
@@ -65,6 +67,7 @@
       "inlineStyle": true,
       "inlineTemplate": true,
       "flat": true,
+      "skipTests": true,
       "standalone": true
     },
     "@schematics/angular:directive": {

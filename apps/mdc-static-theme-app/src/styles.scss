@@ -1,9 +1,5 @@
-html,
-body {
-  height: 100%;
-}
+@use 'styles/tools/tools-themes' as themes;
 
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-}
+@use 'styles/elements/elements-document';
+
+@include themes.core-themes;

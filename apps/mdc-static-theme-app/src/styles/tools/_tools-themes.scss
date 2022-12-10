@@ -1,0 +1,40 @@
+@use '@angular/material' as mat;
+
+$primary-palette: mat.define-palette(mat.$indigo-palette, 500);
+$accent-palette: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$warn-palette: mat.define-palette(mat.$red-palette);
+
+$theme-colors: (
+  primary: $primary-palette,
+  accent: $accent-palette,
+  warn: $warn-palette,
+);
+
+$light-theme: mat.define-light-theme(
+  (
+    color: $theme-colors,
+    // Only include `density` and `typography` in the default theme
+    density: 0,
+    typography: mat.define-typography-config(),
+  )
+);
+
+$dark-theme: mat.define-dark-theme(
+  (
+    color: $theme-colors,
+    // Do not include `density` and `typography` in alternate themes
+  )
+);
+
+@mixin core-themes() {
+  // Always include
+  @include mat.core();
+  // Include for the default theme
+  @include mat.core-theme($light-theme);
+
+  // @media (prefers-color-scheme: dark) {
+  .dark-theme {
+    // Include for alternate themes
+    @include mat.core-color($dark-theme);
+  }
+}

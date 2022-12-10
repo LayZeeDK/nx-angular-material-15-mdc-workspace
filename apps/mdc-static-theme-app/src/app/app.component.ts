@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterOutlet],
+  // The root component can skip this rule
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'mdc-static-theme-app',
   template: `
     <h1>MDC static theme app</h1>
@@ -11,7 +13,10 @@ import { RouterModule } from '@angular/router';
   `,
   styles: [
     `
-      display: block;
+      :host {
+        display: block;
+        margin: 1rem;
+      }
     `,
   ],
 })

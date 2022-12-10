@@ -6,11 +6,14 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [MatCardModule],
   template: `
+    <link href="/components-card.css" rel="stylesheet" />
+
+    <h3>Basic cards</h3>
+
     <mat-card>
       <mat-card-content>Simple card</mat-card-content>
     </mat-card>
   `,
-  styleUrls: ['../../styles/components/components-card.scss'],
   styles: [
     `
       :host {

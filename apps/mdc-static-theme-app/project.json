@@ -19,7 +19,19 @@
           "apps/mdc-static-theme-app/src/favicon.ico",
           "apps/mdc-static-theme-app/src/assets"
         ],
-        "styles": ["apps/mdc-static-theme-app/src/styles.scss"],
+        "styles": [
+          "apps/mdc-static-theme-app/src/styles.scss",
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-card.scss",
+            "inject": false,
+            "bundleName": "components-card"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-button.scss",
+            "inject": false,
+            "bundleName": "components-button"
+          }
+        ],
         "stylePreprocessorOptions": {
           "includePaths": ["apps/mdc-static-theme-app/src/styles"]
         },

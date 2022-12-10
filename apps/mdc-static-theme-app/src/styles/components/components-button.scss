@@ -1,0 +1,10 @@
+@use '@angular/material' as mat;
+@use 'tools/tools-themes' as themes;
+
+// Include for the default theme
+@include mat.button-theme(themes.$light-theme);
+
+.dark-theme {
+  // Include for alternate themes
+  @include mat.button-color(themes.$dark-theme);
+}

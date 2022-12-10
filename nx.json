@@ -66,6 +66,18 @@
       "flat": true,
       "standalone": true,
       "style": "scss"
+    },
+    "@schematics/angular:directive": {
+      "flat": true,
+      "prefix": "mdc",
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:pipe": {
+      "flat": true,
+      "name": "mdc",
+      "skipTests": true,
+      "standalone": true
     }
   }
 }

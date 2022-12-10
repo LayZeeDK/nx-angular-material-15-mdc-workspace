@@ -8,6 +8,7 @@ import { CardWithActionsAlignmentOptionComponent } from './card-with-actions-ali
 import { CardWithFooterComponent } from './card-with-footer.component';
 import { CardWithMediaSizeComponent } from './card-with-media-size';
 import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections.component';
+import { CardWithSubTitleComponent } from './card-with-sub-title';
 
 @Component({
   selector: 'card-card',
@@ -18,6 +19,7 @@ import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections
     CardWithMultipleSectionsComponent,
     CardWithFooterComponent,
     CardWithMediaSizeComponent,
+    CardWithSubTitleComponent,
   ],
   template: `
     <h2>Card</h2>
@@ -27,6 +29,7 @@ import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections
     <card-card-with-multiple-sections></card-card-with-multiple-sections>
     <card-card-with-footer></card-card-with-footer>
     <card-card-with-media-size></card-card-with-media-size>
+    <card-card-with-sub-title></card-card-with-sub-title>
   `,
   styles: [
     `

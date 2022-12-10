@@ -40,6 +40,26 @@
             "input": "apps/mdc-static-theme-app/src/styles/components/components-progress-bar.scss",
             "inject": false,
             "bundleName": "components-progress-bar"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-sidenav.scss",
+            "inject": false,
+            "bundleName": "components-sidenav"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-icon.scss",
+            "inject": false,
+            "bundleName": "components-icon"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-list.scss",
+            "inject": false,
+            "bundleName": "components-list"
+          },
+          {
+            "input": "apps/mdc-static-theme-app/src/styles/components/components-toolbar.scss",
+            "inject": false,
+            "bundleName": "components-toolbar"
           }
         ],
         "stylePreprocessorOptions": {

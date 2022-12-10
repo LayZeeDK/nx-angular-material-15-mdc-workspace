@@ -44,7 +44,7 @@
       "e2eTestRunner": "none",
       "inlineStyle": true,
       "inlineTemplate": true,
-      "prefix": "mdc",
+      "prefix": "app",
       "standalone": true
     },
     "@nrwl/angular:library": {
@@ -55,7 +55,7 @@
       "inlineStyle": true,
       "inlineTemplate": true,
       "flat": true,
-      "prefix": "mdc",
+      "prefix": "app",
       "standalone": true
     },
     "@nrwl/angular:component": {
@@ -69,13 +69,13 @@
     },
     "@schematics/angular:directive": {
       "flat": true,
-      "prefix": "mdc",
+      "prefix": "app",
       "skipTests": true,
       "standalone": true
     },
     "@schematics/angular:pipe": {
       "flat": true,
-      "name": "mdc",
+      "name": "app",
       "skipTests": true,
       "standalone": true
     }

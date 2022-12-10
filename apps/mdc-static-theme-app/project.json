@@ -1,0 +1,82 @@
+{
+  "name": "mdc-static-theme-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/mdc-static-theme-app/src",
+  "prefix": "mdc",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/mdc-static-theme-app",
+        "index": "apps/mdc-static-theme-app/src/index.html",
+        "main": "apps/mdc-static-theme-app/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/mdc-static-theme-app/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/mdc-static-theme-app/src/favicon.ico",
+          "apps/mdc-static-theme-app/src/assets"
+        ],
+        "styles": ["apps/mdc-static-theme-app/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "mdc-static-theme-app:build:production"
+        },
+        "development": {
+          "browserTarget": "mdc-static-theme-app:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "mdc-static-theme-app:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/mdc-static-theme-app/**/*.ts",
+          "apps/mdc-static-theme-app/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

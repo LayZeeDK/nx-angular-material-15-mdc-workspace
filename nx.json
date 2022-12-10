@@ -38,34 +38,34 @@
   },
   "generators": {
     "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "none",
       "e2eTestRunner": "none",
       "inlineStyle": true,
       "inlineTemplate": true,
-      "linter": "eslint",
       "prefix": "mdc",
-      "standalone": true,
-      "style": "scss",
-      "unitTestRunner": "none"
+      "standalone": true
     },
     "@nrwl/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "none",
       "changeDetection": "OnPush",
       "displayBlock": true,
       "inlineStyle": true,
       "inlineTemplate": true,
       "flat": true,
-      "linter": "eslint",
       "prefix": "mdc",
-      "standalone": true,
-      "unitTestRunner": "none"
+      "standalone": true
     },
     "@nrwl/angular:component": {
+      "style": "scss",
       "changeDetection": "OnPush",
       "displayBlock": true,
       "inlineStyle": true,
       "inlineTemplate": true,
       "flat": true,
-      "standalone": true,
-      "style": "scss"
+      "standalone": true
     },
     "@schematics/angular:directive": {
       "flat": true,
@@ -79,5 +79,6 @@
       "skipTests": true,
       "standalone": true
     }
-  }
+  },
+  "defaultProject": "mdc-static-theme-app"
 }

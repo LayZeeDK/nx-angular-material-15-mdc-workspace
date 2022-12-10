@@ -6,5 +6,5 @@
 
 .dark-theme {
   // Include for alternate themes
-  @include mat.card-color($dark-theme);
+  @include mat.card-color(themes.$dark-theme);
 }

@@ -20,6 +20,9 @@
           "apps/mdc-static-theme-app/src/assets"
         ],
         "styles": ["apps/mdc-static-theme-app/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/mdc-static-theme-app/src/styles"]
+        },
         "scripts": []
       },
       "configurations": {

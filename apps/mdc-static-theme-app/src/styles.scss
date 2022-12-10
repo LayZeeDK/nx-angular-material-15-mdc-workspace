@@ -1,5 +1,5 @@
-@use 'styles/tools/tools-themes' as themes;
+@use 'tools/tools-themes' as themes;
 
-@use 'styles/elements/elements-document';
+@use 'elements/elements-document';
 
 @include themes.core-themes;

@@ -29,8 +29,10 @@ $dark-theme: mat.define-dark-theme(
 @mixin core-themes() {
   // Always include
   @include mat.core();
+
   // Include for the default theme
   @include mat.core-theme($light-theme);
+  @include mat.typography-hierarchy($light-theme);
 
   // @media (prefers-color-scheme: dark) {
   .dark-theme {

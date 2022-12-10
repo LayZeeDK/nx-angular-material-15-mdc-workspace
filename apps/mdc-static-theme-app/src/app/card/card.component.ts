@@ -6,6 +6,7 @@ import {
 import { BasicCardsComponent } from './basic-cards.component';
 import { CardWithActionsAlignmentOptionComponent } from './card-with-actions-alignment-option.component';
 import { CardWithFooterComponent } from './card-with-footer.component';
+import { CardWithMediaSizeComponent } from './card-with-media-size';
 import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections.component';
 
 @Component({
@@ -16,6 +17,7 @@ import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections
     CardWithActionsAlignmentOptionComponent,
     CardWithMultipleSectionsComponent,
     CardWithFooterComponent,
+    CardWithMediaSizeComponent,
   ],
   template: `
     <h2>Card</h2>
@@ -24,6 +26,7 @@ import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections
     <card-card-with-actions-alignment-option></card-card-with-actions-alignment-option>
     <card-card-with-multiple-sections></card-card-with-multiple-sections>
     <card-card-with-footer></card-card-with-footer>
+    <card-card-with-media-size></card-card-with-media-size>
   `,
   styles: [
     `
@@ -33,6 +36,7 @@ import { CardWithMultipleSectionsComponent } from './card-with-multiple-sections
 
       .example-card {
         max-width: 400px;
+        margin-bottom: 8px;
       }
 
       .example-header-image {

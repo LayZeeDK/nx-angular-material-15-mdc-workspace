@@ -41,14 +41,17 @@ $dark-theme: mat.define-dark-theme(
 @mixin core-themes() {
   // Always include
   @include mat.core();
+  @include mat.strong-focus-indicators();
 
   // Include for the default theme
   @include mat.core-theme($light-theme);
   @include mat.typography-hierarchy($light-theme);
+  @include mat.strong-focus-indicators-theme($light-theme);
 
   // @media (prefers-color-scheme: dark) {
   .dark-theme {
     // Include for alternate themes
     @include mat.core-color($dark-theme);
+    @include mat.strong-focus-indicators-theme($dark-theme);
   }
 }
